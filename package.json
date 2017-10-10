@@ -8,6 +8,20 @@
   "contributors": [
     "Hristo Deshev <hristo.deshev@telerik.com>"
   ],
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepareJS",
+        "script": "lib/before-prepareJS.js",
+        "inject": true
+      },
+      {
+        "type": "after-prepare",
+        "script": "lib/after-prepare.js",
+        "inject": true
+      }
+    ]
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -27,7 +41,8 @@
   },
   "dependencies": {
     "semver": "^5.4.1",
-    "shelljs": "^0.6.0"
+    "shelljs": "^0.6.0",
+    "nativescript-hook": "0.2.1"
   },
   "devDependencies": {}
 }
