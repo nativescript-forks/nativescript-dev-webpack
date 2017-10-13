@@ -11,7 +11,12 @@
   "nativescript": {
     "hooks": [
       {
-        "type": "before-prepareJS",
+        "type": "before-prepareJSApp",
+        "script": "lib/before-prepareJS.js",
+        "inject": true
+      },
+      {
+        "type": "before-prepareJSDependencies",
         "script": "lib/before-prepareJS.js",
         "inject": true
       },
