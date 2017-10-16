@@ -4,7 +4,7 @@ function PlatformSuffixPlugin(platform, platforms) {
     this.platform = platform;
     this.platforms = platforms || ["ios", "android"];
 }
-module.exports = PlatformSuffixPlugin;
+exports.PlatformSuffixPlugin = PlatformSuffixPlugin;
 
 PlatformSuffixPlugin.prototype.apply = function(resolver) {
     var platform = this.platform;
