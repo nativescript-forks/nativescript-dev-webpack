@@ -16,11 +16,6 @@
         "inject": true
       },
       {
-        "type": "before-prepareJSDependencies",
-        "script": "lib/before-prepareJS.js",
-        "inject": true
-      },
-      {
         "type": "after-prepare",
         "script": "lib/after-prepare.js",
         "inject": true
